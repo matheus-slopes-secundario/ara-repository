@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Entre em contato com a ARA Ivaiporã.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARA Ivaiporã | Contato</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo-ara.svg">
+  <link rel="alternate icon" type="image/png" sizes="192x192" href="assets/favicon-ara.png">
+</head>
+<body>
+  <header>
+    <a class="marca-do-site" href="index.html"><img class="logo-site" src="assets/logo-ara.svg" alt=""><span class="marca-completa">Associação de Recuperação de Alcoólatras de Ivaiporã</span><span class="marca-curta">ARA de Ivaiporã</span></a>
+    <nav aria-label="Navegação principal">
+      <ul class="menu-desktop"><li><a href="index.html">Início</a></li><li><a href="nossa-historia.html">Nossa História</a></li><li><a href="testemunhos.html">Testemunhos</a></li><li><a href="galeria.html">Galeria</a></li><li><a href="contato.html" aria-current="page">Contato</a></li></ul>
+      <details class="menu-mobile"><summary><span class="icone-menu" aria-hidden="true"></span>Menu</summary><ul><li><a href="index.html">Início</a></li><li><a href="nossa-historia.html">Nossa História</a></li><li><a href="testemunhos.html">Testemunhos</a></li><li><a href="galeria.html">Galeria</a></li><li><a href="contato.html" aria-current="page">Contato</a></li></ul></details>
+    </nav>
+  </header>
+  <main>
+    <section><h1>Você é bem-vindo do jeito que estiver</h1><p>Levantar a cabeça e buscar ajuda no momento certo é o primeiro passo para uma vida sóbria e plena.</p></section>
+    <section><h2>Como funciona o acolhimento</h2><p>A participação é totalmente espontânea. Ao chegar pela primeira vez, você passará por uma conversa inicial para entender suas necessidades e ser integrado ao grupo.</p><p>O ARA trabalha exclusivamente com questões ligadas ao alcoolismo, em formato de terapia de grupo. Não ministramos nem prescrevemos medicamentos.</p><h2>Onde nos encontrar</h2><p>Av. Melvis Muchiuti, Ivaiporã.</p><p>Reuniões: segundas-feiras, às 19h30.</p>
+      <div class="mapa-localizacao">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.153562243452!2d-51.6648387!3d-24.2364073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ec15002b1d67ed%3A0xe3127d0bc6954eef!2zQXNzb2NpYcOnw6NvIGRlIFJlY3VwZXJhw6fDo28gZGUgQWxjw7NvbGF0cmFzIGRlIEl2YWlwb3LDow!5e0!3m2!1spt-BR!2sbr!4v1792259090813!5m2!1spt-BR!2sbr" title="Localização da Associação de Recuperação de Alcoólatras de Ivaiporã" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="secao-formulario" aria-labelledby="titulo-formulario">
+      <h2 id="titulo-formulario">Fale com a equipe da ARA</h2>
+      <p>Compartilhe seu testemunho ou conte como gostaria de ajudar.</p>
+      <button class="botao-ajuda" id="abrir_popup" type="button" aria-haspopup="dialog" aria-controls="fundo">Abrir formulário</button>
+      <div class="fundo_popup" id="fundo" hidden>
+        <div class="popup" role="dialog" aria-modal="true" aria-labelledby="titulo-formulario-popup" tabindex="-1">
+          <button id="fechar_popup" class="fechar" type="button" aria-label="Fechar formulário">&times;</button>
+          <h2 id="titulo-formulario-popup">Como você gostaria de participar?</h2>
+          <fieldset class="escolha-formulario">
+        <legend>Escolha uma opção</legend>
+        <label class="opcao-formulario"><input type="radio" name="tipo-formulario" value="testemunho" aria-controls="painel-testemunho"><span><strong>Enviar meu testemunho</strong><small>Compartilhe sua experiência com a equipe da ARA.</small></span></label>
+        <label class="opcao-formulario"><input type="radio" name="tipo-formulario" value="ajuda" aria-controls="painel-ajuda"><span><strong>Quero ajudar a organização</strong><small>Conte como gostaria de contribuir.</small></span></label>
+      </fieldset>
+      <div class="painel-formulario" id="painel-testemunho" data-form-panel hidden>
+        <h3>Mande seu testemunho</h3>
+        <p>Seu relato será enviado de forma privada à equipe. Não inclua dados pessoais de terceiros.</p>
+        <form class="formulario-contato" data-contact-form method="post" action="https://script.google.com/macros/s/AKfycbwa0VaJi0lyXBuar0eToCJswqamdV7FQXIpG-fsNFx7dayQ7Dnlq8CvYOz2Lg20OrA4ew/exec">
+          <input type="hidden" name="form_type" value="testemunho"><div class="campo-armadilha" aria-hidden="true"><label>Site <input tabindex="-1" autocomplete="off" name="website" type="text"></label></div>
+          <div class="grade-campos-formulario">
+            <div class="campo-formulario"><label for="testemunho-nome">Seu nome</label><input id="testemunho-nome" name="name" type="text" minlength="2" maxlength="100" autocomplete="name" required></div>
+            <div class="campo-formulario"><label for="testemunho-email">E-mail <span>(opcional, para resposta)</span></label><input id="testemunho-email" name="email" type="email" maxlength="254" autocomplete="email"></div>
+            <div class="campo-formulario campo-formulario--amplo"><label for="testemunho-frase">Uma frase motivacional</label><input id="testemunho-frase" name="motivational_phrase" type="text" maxlength="180" required></div>
+            <div class="campo-formulario campo-formulario--amplo"><label for="testemunho-texto">Seu testemunho</label><textarea id="testemunho-texto" name="message" rows="5" minlength="20" maxlength="5000" required></textarea></div>
+          </div>
+          <label class="consentimento"><input name="consent" type="checkbox" value="yes" required> Autorizo o envio deste relato para a equipe do ARA.</label><button class="botaosub" type="submit">Enviar testemunho</button><p class="mensagem-formulario" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="painel-formulario" id="painel-ajuda" data-form-panel hidden>
+        <h3>Quero ajudar a organização</h3>
+        <p>Deixe seus dados e conte como gostaria de contribuir.</p>
+        <form class="formulario-contato" data-contact-form method="post" action="https://script.google.com/macros/s/AKfycbwa0VaJi0lyXBuar0eToCJswqamdV7FQXIpG-fsNFx7dayQ7Dnlq8CvYOz2Lg20OrA4ew/exec">
+          <input type="hidden" name="form_type" value="ajuda"><div class="campo-armadilha" aria-hidden="true"><label>Site <input tabindex="-1" autocomplete="off" name="website" type="text"></label></div>
+          <div class="grade-campos-formulario">
+            <div class="campo-formulario"><label for="ajuda-nome">Seu nome</label><input id="ajuda-nome" name="name" type="text" minlength="2" maxlength="100" autocomplete="name" required></div>
+            <div class="campo-formulario"><label for="ajuda-telefone">Telefone ou celular</label><input id="ajuda-telefone" name="phone" type="tel" inputmode="tel" maxlength="30" autocomplete="tel" required></div>
+            <div class="campo-formulario campo-formulario--amplo"><label for="ajuda-email">E-mail</label><input id="ajuda-email" name="email" type="email" maxlength="254" autocomplete="email" required></div>
+            <div class="campo-formulario campo-formulario--amplo"><label for="ajuda-objetivo">Como deseja ajudar?</label><textarea id="ajuda-objetivo" name="message" rows="4" minlength="10" maxlength="2000" required></textarea></div>
+          </div>
+          <label class="consentimento"><input name="consent" type="checkbox" value="yes" required> Autorizo o envio destes dados para a equipe do ARA.</label><button class="botaosub" type="submit">Enviar mensagem</button><p class="mensagem-formulario" data-form-status role="status" aria-live="polite"></p>
+        </form>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="bloco-do-footer"><h3>Associação de Recuperação de Alcoólatras de Ivaiporã</h3><ul><li><a href="index.html">Início</a></li><li><a href="nossa-historia.html">Nossa História</a></li><li><a href="testemunhos.html">Testemunhos</a></li><li><a href="galeria.html">Galeria</a></li><li><a href="contato.html">Contato</a></li></ul></div><div class="bloco-do-footer"><h3>Informações de Contato</h3><address><p><a href="mailto:carlosmaloca12@gmail.com">carlosmaloca12@gmail.com</a></p></address></div><div class="registro-do-ara"><p>&copy; 2026 Associação de Recuperação de Alcoólatras de Ivaiporã.</p></div></footer>
+  <script src="assets/contact-form.js"></script>
+</body>
+</html>
